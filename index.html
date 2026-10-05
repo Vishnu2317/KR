@@ -19,7 +19,10 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
   <style>
     :root {
       --navy: #07111f;
@@ -145,12 +148,18 @@
     }
 
     .top-strip {
-      color: #06101c;
-      background: var(--yellow);
-      font-size: 0.82rem;
-      font-weight: 700;
-      padding: 9px 20px;
-      text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #06101c;
+  background: var(--yellow);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 9px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     }
 
     header {
@@ -866,7 +875,7 @@
   <!-- Replace the phone number and WhatsApp number throughout this file -->
 
   <div class="top-strip">
-    24/7 Electrical Support Available · Fast Response · Trusted Service
+    ⚡ 24/7 Electrical Support Available · 📞 Call Now · 💬 WhatsApp Us
   </div>
 
   <header>
@@ -883,7 +892,7 @@
         <a href="#about">About Us</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-primary" href="tel:+91 6303702367">Call Now</a>
+        <a class="btn btn-primary" href="tel:+91 9566838454">Call Now</a>
       </nav>
     </div>
   </header>
@@ -906,13 +915,13 @@
           </p>
 
           <div class="hero-buttons">
-            <a class="btn btn-primary" href="tel:+91 6303702367">
+            <a class="btn btn-primary" href="tel:+91 9566838454">
               Call for a Quote <span>→</span>
             </a>
 
             <a
               class="btn btn-outline"
-              href="https://wa.me/15551234567?text=Hello%20K%20R%20Electricals%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+              href="https://wa.me/9566838454?text=Hello%20K%20R%20Electricals%2C%20I%20would%20like%20to%20make%20an%20enquiry."
               target="_blank"
             >
               WhatsApp Us
@@ -1141,7 +1150,7 @@
             commercial project, speak to K R Electricals today.
           </p>
 
-          <a class="btn btn-primary" href="tel:+91 8939719384">
+          <a class="btn btn-primary" href="tel:+91 9566838454">
             Call K R Electricals <span>→</span>
           </a>
         </div>
@@ -1160,17 +1169,19 @@
           </p>
 
           <div class="contact-list">
-            <a class="contact-item" href="tel:+91 8939719384">
-              <span class="contact-item-icon">☎</span>
+            <a class="contact-item" href="tel:+91 9566838454">
+              <span class="contact-item-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+              </span>
               <span>
                 <small>Call us</small>
-                <strong>+91 89397 19384</strong>
+                <strong>+91 9566838454</strong>
               </span>
             </a>
 
             <a
               class="contact-item"
-              href="https://wa.me/15551234567"
+              href="https://wa.me/9566838454"
               target="_blank"
             >
               <span class="contact-item-icon">◉</span>
@@ -1253,11 +1264,11 @@
 
   <a
     class="floating-whatsapp"
-    href="https://wa.me/15551234567?text=Hello%20K%20R%20Electricals%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+    href="https://wa.me/9566838454?text=Hello%20K%20R%20Electricals%2C%20I%20would%20like%20to%20make%20an%20enquiry."
     target="_blank"
     aria-label="Message K R Electricals on WhatsApp"
   >
-    ◉
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
 
   <script>
@@ -1307,7 +1318,7 @@
           `Message: ${encodeURIComponent(message)}`;
 
         window.open(
-          `https://wa.me/8939719384?text=${whatsappMessage}`,
+          `https://wa.me/9566838454?text=${whatsappMessage}`,
           "_blank"
         );
       });
